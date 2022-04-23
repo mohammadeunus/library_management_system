@@ -14,6 +14,11 @@ duty of manager
 - Manager can delete Books
 
 ##sample of app 
+<br>
 Admin Interface
+<br>
+
 ![](library_management_system/git_sundor/AdminGitSundor.gif)
+
+<br>
 Manager Interface
