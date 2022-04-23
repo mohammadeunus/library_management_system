@@ -32,8 +32,9 @@
             this.createButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.idBoxManager = new System.Windows.Forms.TextBox();
-            this.passBoxManager = new System.Windows.Forms.TextBox();
+            this.EntryIdManager = new System.Windows.Forms.TextBox();
+            this.EntryPassBoxManager = new System.Windows.Forms.TextBox();
+            this.ERRORLABEL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,6 +56,7 @@
             this.createButton.TabIndex = 19;
             this.createButton.Text = "create";
             this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // label3
             // 
@@ -76,31 +78,42 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Manager id";
             // 
-            // idBoxManager
+            // EntryIdManager
             // 
-            this.idBoxManager.Location = new System.Drawing.Point(278, 171);
-            this.idBoxManager.Name = "idBoxManager";
-            this.idBoxManager.Size = new System.Drawing.Size(164, 20);
-            this.idBoxManager.TabIndex = 16;
+            this.EntryIdManager.Location = new System.Drawing.Point(278, 171);
+            this.EntryIdManager.Name = "EntryIdManager";
+            this.EntryIdManager.Size = new System.Drawing.Size(164, 20);
+            this.EntryIdManager.TabIndex = 16;
             // 
-            // passBoxManager
+            // EntryPassBoxManager
             // 
-            this.passBoxManager.Location = new System.Drawing.Point(278, 201);
-            this.passBoxManager.Name = "passBoxManager";
-            this.passBoxManager.PasswordChar = 'x';
-            this.passBoxManager.Size = new System.Drawing.Size(164, 20);
-            this.passBoxManager.TabIndex = 15;
+            this.EntryPassBoxManager.Location = new System.Drawing.Point(278, 201);
+            this.EntryPassBoxManager.Name = "EntryPassBoxManager";
+            this.EntryPassBoxManager.PasswordChar = 'x';
+            this.EntryPassBoxManager.Size = new System.Drawing.Size(164, 20);
+            this.EntryPassBoxManager.TabIndex = 15;
+            // 
+            // ERRORLABEL
+            // 
+            this.ERRORLABEL.AutoSize = true;
+            this.ERRORLABEL.BackColor = System.Drawing.Color.IndianRed;
+            this.ERRORLABEL.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ERRORLABEL.Location = new System.Drawing.Point(185, 306);
+            this.ERRORLABEL.Name = "ERRORLABEL";
+            this.ERRORLABEL.Size = new System.Drawing.Size(0, 17);
+            this.ERRORLABEL.TabIndex = 20;
             // 
             // adminPage_NewManagerEntr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 450);
+            this.Controls.Add(this.ERRORLABEL);
             this.Controls.Add(this.createButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.idBoxManager);
-            this.Controls.Add(this.passBoxManager);
+            this.Controls.Add(this.EntryIdManager);
+            this.Controls.Add(this.EntryPassBoxManager);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "adminPage_NewManagerEntr";
@@ -117,7 +130,8 @@
         private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox idBoxManager;
-        private System.Windows.Forms.TextBox passBoxManager;
+        private System.Windows.Forms.TextBox EntryIdManager;
+        private System.Windows.Forms.TextBox EntryPassBoxManager;
+        private System.Windows.Forms.Label ERRORLABEL;
     }
 }
