@@ -3,3 +3,4 @@
 	- need something under logout to shutdown the adminPage
 2.pressing the red crossButton from any page is not shutting down the app.
 3.repeatation of logincheck() function inside homePage_ManagerLogin.cs and homePage_AdminLogin.cs
+4.multiple time Connection.cs class object creatation
