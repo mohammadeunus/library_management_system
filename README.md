@@ -13,4 +13,7 @@ duty of manager
 - Manager can search book stock
 - Manager can delete Books
 
-sample of app 
+##sample of app 
+Admin Interface
+![](library_management_system/git_sundor/AdminGitSundor.gif)
+Manager Interface
