@@ -96,6 +96,12 @@
     <Compile Include="forms\managerPage.Designer.cs">
       <DependentUpon>managerPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\managerPage_bookStockList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\managerPage_bookStockList.Designer.cs">
+      <DependentUpon>managerPage_bookStockList.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\managerPage_DeleteBookStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\managerPage.resx">
       <DependentUpon>managerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\managerPage_bookStockList.resx">
+      <DependentUpon>managerPage_bookStockList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\managerPage_DeleteBookStock.resx">
       <DependentUpon>managerPage_DeleteBookStock.cs</DependentUpon>

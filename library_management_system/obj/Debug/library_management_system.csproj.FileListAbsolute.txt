@@ -41,3 +41,4 @@ E:\entertainment\google drive\lecrures\dot net\GUI project assignment\git\librar
 E:\entertainment\google drive\lecrures\dot net\GUI project assignment\git\library_management_system\library_management_system\obj\Debug\library_management_system.exe
 E:\entertainment\google drive\lecrures\dot net\GUI project assignment\git\library_management_system\library_management_system\obj\Debug\library_management_system.pdb
 E:\entertainment\google drive\lecrures\dot net\GUI project assignment\git\library_management_system\library_management_system\obj\Debug\library_management_system.forms.managerPage_UpdateBookStock.resources
+E:\entertainment\google drive\lecrures\dot net\GUI project assignment\git\library_management_system\library_management_system\obj\Debug\library_management_system.forms.managerPage_bookStockList.resources

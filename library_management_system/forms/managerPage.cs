@@ -18,6 +18,7 @@ namespace library_management_system.forms
         managerPage_UpdateBookStock mng2 = new managerPage_UpdateBookStock();
         managerPage_SearchBook mng3 = new managerPage_SearchBook();
         managerPage_DeleteBookStock mng4 = new managerPage_DeleteBookStock();
+        managerPage_bookStockList mng5 = new managerPage_bookStockList();
 
         public managerPage(homePage homePage)
         {
@@ -53,6 +54,7 @@ namespace library_management_system.forms
         {
             hmpg.Show();
             this.Hide();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +75,11 @@ namespace library_management_system.forms
         private void button4_Click(object sender, EventArgs e)
         {
             loadform(mng4);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            loadform(mng5);
         }
     }
 }
