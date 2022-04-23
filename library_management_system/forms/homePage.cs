@@ -37,6 +37,7 @@ namespace library_management_system.forms
             this.mainPanel.Tag = f;
             f.Show();
         }
+
         
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -62,9 +63,6 @@ namespace library_management_system.forms
         {
             loadform(mng1);
         }
-        ~homePage()
-        {
 
-        }
     }
 }

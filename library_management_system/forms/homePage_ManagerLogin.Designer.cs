@@ -94,7 +94,6 @@
             // 
             this.idBoxManager.Location = new System.Drawing.Point(263, 246);
             this.idBoxManager.Name = "idBoxManager";
-            this.idBoxManager.PasswordChar = 'x';
             this.idBoxManager.Size = new System.Drawing.Size(164, 20);
             this.idBoxManager.TabIndex = 9;
             // 

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.OracleClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -14,7 +7,7 @@ namespace library_management_system.forms
 {
     public partial class homePage_AdminLogin : Form
     {
-        string userId, password, querry;
+        string  querry;
 
         public homePage hmp;
         public homePage_AdminLogin(homePage homePage)
@@ -61,7 +54,7 @@ namespace library_management_system.forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            logincheck();
+            this.logincheck();
         }
 
         private void errorAdminLogin_Click(object sender, EventArgs e)
