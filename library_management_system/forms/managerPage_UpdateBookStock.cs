@@ -16,5 +16,10 @@ namespace library_management_system.forms
         {
             InitializeComponent();
         }
+
+        private void managerPage_UpdateBookStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
