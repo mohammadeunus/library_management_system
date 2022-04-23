@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.createButton = new System.Windows.Forms.Button();
+            this.DeleteManagerButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.idBoxManager = new System.Windows.Forms.TextBox();
+            this.DeleteIdBoxManager = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ERRORLABEL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // createButton
+            // DeleteManagerButton
             // 
-            this.createButton.Font = new System.Drawing.Font("Segoe Script", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createButton.Location = new System.Drawing.Point(188, 246);
-            this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(242, 28);
-            this.createButton.TabIndex = 25;
-            this.createButton.Text = "delete user";
-            this.createButton.UseVisualStyleBackColor = true;
+            this.DeleteManagerButton.Font = new System.Drawing.Font("Segoe Script", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteManagerButton.Location = new System.Drawing.Point(188, 246);
+            this.DeleteManagerButton.Name = "DeleteManagerButton";
+            this.DeleteManagerButton.Size = new System.Drawing.Size(242, 28);
+            this.DeleteManagerButton.TabIndex = 25;
+            this.DeleteManagerButton.Text = "delete user";
+            this.DeleteManagerButton.UseVisualStyleBackColor = true;
+            this.DeleteManagerButton.Click += new System.EventHandler(this.DeleteManagerButton_Click);
             // 
             // label2
             // 
@@ -54,12 +56,12 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Manager id";
             // 
-            // idBoxManager
+            // DeleteIdBoxManager
             // 
-            this.idBoxManager.Location = new System.Drawing.Point(278, 193);
-            this.idBoxManager.Name = "idBoxManager";
-            this.idBoxManager.Size = new System.Drawing.Size(164, 20);
-            this.idBoxManager.TabIndex = 22;
+            this.DeleteIdBoxManager.Location = new System.Drawing.Point(278, 193);
+            this.DeleteIdBoxManager.Name = "DeleteIdBoxManager";
+            this.DeleteIdBoxManager.Size = new System.Drawing.Size(164, 20);
+            this.DeleteIdBoxManager.TabIndex = 22;
             // 
             // label1
             // 
@@ -71,14 +73,25 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "AdminPage: Delete a manager ";
             // 
+            // ERRORLABEL
+            // 
+            this.ERRORLABEL.AutoSize = true;
+            this.ERRORLABEL.BackColor = System.Drawing.Color.IndianRed;
+            this.ERRORLABEL.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ERRORLABEL.Location = new System.Drawing.Point(196, 304);
+            this.ERRORLABEL.Name = "ERRORLABEL";
+            this.ERRORLABEL.Size = new System.Drawing.Size(0, 17);
+            this.ERRORLABEL.TabIndex = 26;
+            // 
             // adminPage_ManagerDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 450);
-            this.Controls.Add(this.createButton);
+            this.Controls.Add(this.ERRORLABEL);
+            this.Controls.Add(this.DeleteManagerButton);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.idBoxManager);
+            this.Controls.Add(this.DeleteIdBoxManager);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "adminPage_ManagerDelete";
@@ -91,9 +104,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button createButton;
+        private System.Windows.Forms.Button DeleteManagerButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox idBoxManager;
+        private System.Windows.Forms.TextBox DeleteIdBoxManager;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ERRORLABEL;
     }
 }
