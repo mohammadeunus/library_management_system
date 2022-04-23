@@ -8,38 +8,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace library_management_system.forms
 {
     public partial class homePage_AdminLogin : Form
     {
+        string userId, password, querry;
+
         public homePage hmp;
         public homePage_AdminLogin(homePage homePage)
         {
             this.hmp = homePage;
             InitializeComponent();
         }
-        /*
+      
         private void logincheck()
         {
             try
             {
 
                 Connection CN = new Connection();
-                CN.thisConnection.Open();
-                OracleCommand thisCommand = new OracleCommand();
-                thisCommand.Connection = CN.thisConnection;
-                thisCommand.CommandText = "SELECT * FROM ADMINLOGIN WHERE id='" + idBoxAdmin.Text + "' AND password='" + passBoxAdmin.Text + "'";
-                OracleDataReader thisReader = thisCommand.ExecuteReader();
-                if (thisReader.Read())
+                querry = "SELECT * FROM ADMINLOGINinfo WHERE id='" + idBoxAdmin.Text + "' AND password='" + passBoxAdmin.Text + "'";
+                
+                SqlDataAdapter sda =new SqlDataAdapter(querry, CN.thisConnection);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if (dtable.Rows.Count>0)
                 {
-                    DbFeatures oform = new DbFeatures();
+                    adminPage oform = new adminPage(hmp);
                     oform.Show();
-                    this.Hide();
+                    passBoxAdmin.Clear();
+                    hmp.Hide();
+
                 }
                 else
                 {
-                    errorAdminLogin.Text = "username or password incorrect";
+                    adminLoginInfo.Text = "Admin: username or password incorrect";
                     passBoxAdmin.Clear();
                 }
                 //this.Close();
@@ -48,15 +55,13 @@ namespace library_management_system.forms
             }
             catch (Exception ex)
             {
-                errorAdminLogin.Text = "Exception error: "+ ex.ToString();
+                adminLoginInfo.Text = "Admin: Exception error: " + ex.ToString();
             }
-        }*/
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            adminPage oform = new adminPage(hmp);
-            oform.Show();
-            hmp.Hide();
+            logincheck();
         }
 
         private void errorAdminLogin_Click(object sender, EventArgs e)

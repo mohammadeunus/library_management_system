@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.managerLoginInfo = new System.Windows.Forms.Label();
             this.idBoxManager = new System.Windows.Forms.TextBox();
             this.passBoxManager = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,15 +80,15 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "User id";
             // 
-            // label1
+            // managerLoginInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "please login if you are MANAGER";
+            this.managerLoginInfo.AutoSize = true;
+            this.managerLoginInfo.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.managerLoginInfo.Location = new System.Drawing.Point(194, 211);
+            this.managerLoginInfo.Name = "managerLoginInfo";
+            this.managerLoginInfo.Size = new System.Drawing.Size(206, 17);
+            this.managerLoginInfo.TabIndex = 10;
+            this.managerLoginInfo.Text = "please login if you are MANAGER";
             // 
             // idBoxManager
             // 
@@ -106,7 +106,7 @@
             this.passBoxManager.Size = new System.Drawing.Size(164, 20);
             this.passBoxManager.TabIndex = 8;
             // 
-            // HomePageManagerLogin
+            // homePage_ManagerLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,11 +115,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.managerLoginInfo);
             this.Controls.Add(this.idBoxManager);
             this.Controls.Add(this.passBoxManager);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HomePageManagerLogin";
+            this.Name = "homePage_ManagerLogin";
             this.Text = "HomePageManagerLogin";
             this.Load += new System.EventHandler(this.HomePageManagerLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -134,7 +134,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label managerLoginInfo;
         private System.Windows.Forms.TextBox idBoxManager;
         private System.Windows.Forms.TextBox passBoxManager;
     }

@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.adminLoginInfo = new System.Windows.Forms.Label();
             this.idBoxAdmin = new System.Windows.Forms.TextBox();
             this.passBoxAdmin = new System.Windows.Forms.TextBox();
             this.errorAdminLogin = new System.Windows.Forms.Label();
@@ -81,15 +81,15 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "User id";
             // 
-            // label1
+            // adminLoginInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "please login if you are an ADMIN";
+            this.adminLoginInfo.AutoSize = true;
+            this.adminLoginInfo.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminLoginInfo.Location = new System.Drawing.Point(194, 211);
+            this.adminLoginInfo.Name = "adminLoginInfo";
+            this.adminLoginInfo.Size = new System.Drawing.Size(200, 17);
+            this.adminLoginInfo.TabIndex = 10;
+            this.adminLoginInfo.Text = "please login if you are an ADMIN";
             // 
             // idBoxAdmin
             // 
@@ -116,7 +116,7 @@
             this.errorAdminLogin.TabIndex = 15;
             this.errorAdminLogin.Click += new System.EventHandler(this.errorAdminLogin_Click);
             // 
-            // HomePageAdminLogin
+            // homePage_AdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,11 +126,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.adminLoginInfo);
             this.Controls.Add(this.idBoxAdmin);
             this.Controls.Add(this.passBoxAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HomePageAdminLogin";
+            this.Name = "homePage_AdminLogin";
             this.Text = "HomePageAdminLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -144,7 +144,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label adminLoginInfo;
         private System.Windows.Forms.TextBox idBoxAdmin;
         private System.Windows.Forms.TextBox passBoxAdmin;
         private System.Windows.Forms.Label errorAdminLogin;
