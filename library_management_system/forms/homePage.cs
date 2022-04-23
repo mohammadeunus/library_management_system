@@ -64,5 +64,9 @@ namespace library_management_system.forms
             loadform(mng1);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
