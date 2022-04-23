@@ -142,6 +142,19 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1999",
+            "2001",
+            "2003",
+            "2005",
+            "2007",
+            "2009",
+            "2011",
+            "2013",
+            "2015",
+            "2017",
+            "2019",
+            "2021"});
             this.comboBox2.Location = new System.Drawing.Point(137, 220);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(182, 21);

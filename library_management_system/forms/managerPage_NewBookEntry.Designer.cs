@@ -66,9 +66,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(480, 122);
+            this.textBox1.Location = new System.Drawing.Point(162, 123);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
             this.textBox1.TabIndex = 24;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -110,6 +110,19 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1999",
+            "2001",
+            "2003",
+            "2005",
+            "2007",
+            "2009",
+            "2011",
+            "2013",
+            "2015",
+            "2017",
+            "2019",
+            "2021"});
             this.comboBox3.Location = new System.Drawing.Point(162, 169);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(200, 21);
@@ -149,7 +162,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(480, 172);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
+            this.textBox3.Size = new System.Drawing.Size(135, 20);
             this.textBox3.TabIndex = 47;
             // 
             // label7
@@ -165,9 +178,9 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(162, 121);
+            this.comboBox2.Location = new System.Drawing.Point(480, 119);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 21);
+            this.comboBox2.Size = new System.Drawing.Size(135, 21);
             this.comboBox2.TabIndex = 50;
             // 
             // managerPage_NewBookEntry
