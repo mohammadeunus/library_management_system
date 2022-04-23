@@ -1,3 +1,5 @@
 1.increase in ram usage while switching between homePage and adminPage through login and logout button.
-    - should i use destructor?
-2.pressing the red crossButton from adminPage is not shutting down the app.
+	- should i use destructor?
+	- need something under logout to shutdown the adminPage
+2.pressing the red crossButton from any page is not shutting down the app.
+3.repeatation of logincheck() function inside homePage_ManagerLogin.cs and homePage_AdminLogin.cs
