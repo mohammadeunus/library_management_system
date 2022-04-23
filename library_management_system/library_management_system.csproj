@@ -155,6 +155,9 @@
     <EmbeddedResource Include="forms\managerPage_SearchBook.resx">
       <DependentUpon>managerPage_SearchBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\managerPage_UpdateBookStock.resx">
+      <DependentUpon>managerPage_UpdateBookStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

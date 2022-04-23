@@ -21,5 +21,10 @@ namespace library_management_system.forms
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

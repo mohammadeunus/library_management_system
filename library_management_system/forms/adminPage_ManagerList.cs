@@ -16,5 +16,10 @@ namespace library_management_system.forms
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

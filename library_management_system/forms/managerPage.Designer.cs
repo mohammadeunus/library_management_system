@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(managerPage));
-            this.mainPanel = new System.Windows.Forms.Panel();
+            this.mainPanelManagerPage = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,14 +41,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // mainPanel
+            // mainPanelManagerPage
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(172, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(628, 450);
-            this.mainPanel.TabIndex = 5;
-            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            this.mainPanelManagerPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanelManagerPage.Location = new System.Drawing.Point(172, 0);
+            this.mainPanelManagerPage.Name = "mainPanelManagerPage";
+            this.mainPanelManagerPage.Size = new System.Drawing.Size(628, 450);
+            this.mainPanelManagerPage.TabIndex = 5;
+            this.mainPanelManagerPage.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // panel1
             // 
@@ -74,6 +74,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Delete book stock";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -105,6 +106,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Search book";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -115,6 +117,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Update book stock";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -125,13 +128,14 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "New book entry";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // managerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.mainPanelManagerPage);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "managerPage";
@@ -145,7 +149,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Panel mainPanelManagerPage;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;

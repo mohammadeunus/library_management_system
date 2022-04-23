@@ -35,18 +35,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(329, 9);
+            this.label1.Location = new System.Drawing.Point(257, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "AdminPage_managerList";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(44, 44);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(729, 357);
+            this.listView1.Size = new System.Drawing.Size(541, 357);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -54,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(638, 450);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
