@@ -133,6 +133,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "managerPage";
             this.Text = "managerPage";
             this.Load += new System.EventHandler(this.managerPage_Load);

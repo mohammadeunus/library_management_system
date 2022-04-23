@@ -1,0 +1,3 @@
+1.increase in ram usage while switching between homePage and adminPage through login and logout button.
+    - should i use destructor?
+2.pressing the red crossButton from adminPage is not shutting down the app.

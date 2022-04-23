@@ -12,13 +12,13 @@ namespace library_management_system.forms
 {
     public partial class homePage : Form
     {
-        HomePageAdminLogin adm1;
-        HomePageManagerLogin mng1;
+        homePage_AdminLogin adm1;
+        homePage_ManagerLogin mng1;
 
         public homePage()
         {
-            adm1 = new HomePageAdminLogin(this);
-            mng1 = new HomePageManagerLogin(this);
+            adm1 = new homePage_AdminLogin(this);
+            mng1 = new homePage_ManagerLogin(this);
 
             InitializeComponent();
 
@@ -37,7 +37,7 @@ namespace library_management_system.forms
             this.mainPanel.Tag = f;
             f.Show();
         }
-
+        
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -61,6 +61,10 @@ namespace library_management_system.forms
         private void button2_Click(object sender, EventArgs e)
         {
             loadform(mng1);
+        }
+        ~homePage()
+        {
+
         }
     }
 }

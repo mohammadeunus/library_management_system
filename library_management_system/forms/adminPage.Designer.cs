@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminPage));
-            this.mainPanel = new System.Windows.Forms.Panel();
+            this.mainPanelAdmin = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.logout = new System.Windows.Forms.Button();
@@ -40,14 +40,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // mainPanel
+            // mainPanelAdmin
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(172, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(628, 450);
-            this.mainPanel.TabIndex = 3;
-            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            this.mainPanelAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanelAdmin.Location = new System.Drawing.Point(172, 0);
+            this.mainPanelAdmin.Name = "mainPanelAdmin";
+            this.mainPanelAdmin.Size = new System.Drawing.Size(628, 450);
+            this.mainPanelAdmin.TabIndex = 3;
+            this.mainPanelAdmin.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // panel1
             // 
@@ -93,6 +93,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Manager delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -103,6 +104,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "New manager entry";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -113,14 +115,16 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Manager list";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // adminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.mainPanelAdmin);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "adminPage";
             this.Text = "adminPage";
             this.Load += new System.EventHandler(this.adminPage_Load);
@@ -132,7 +136,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Panel mainPanelAdmin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button logout;
