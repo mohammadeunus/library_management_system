@@ -60,7 +60,7 @@ namespace library_management_system.forms
             }
             catch (Exception ex)
             {
-                ERRORLAvEL.Text = ex.ToString().Substring(0, 90)+ "\n" +ex.ToString().Substring(90, 180) + "\n" + ex.ToString().Substring(180, 270) + "\n" + ex.ToString().Substring(270, 360) + "\n" + ex.ToString().Substring(360, 450) + "\n" + ex.ToString().Substring(450, 540);
+                ERRORLAvEL.Text = ex.Message;
             }
 
         }

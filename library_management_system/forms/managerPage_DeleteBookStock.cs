@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace library_management_system.forms
 {
@@ -15,6 +16,93 @@ namespace library_management_system.forms
         public managerPage_DeleteBookStock()
         {
             InitializeComponent();
+            datashow();
+        }
+        private void datashow(string dest)
+        {
+            try
+            {
+                string querry;
+                querry = "SELECT * FROM bookTable where category='" + dest + "'";
+
+                Connection CN = new Connection();
+
+                SqlDataAdapter sda = new SqlDataAdapter(querry, CN.thisConnection);
+
+                DataTable fatable = new DataTable();
+                sda.Fill(fatable);
+                dataGridView1.DataSource = fatable;
+                CN.thisConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                errorDeleteBook.Text = ex.Message;
+            }
+
+        }
+        private void datashow()
+        {
+            try
+            {
+                string querry;
+                querry = "SELECT * FROM bookTable";
+
+                Connection CN = new Connection();
+
+                SqlDataAdapter sda = new SqlDataAdapter(querry, CN.thisConnection);
+
+                DataTable fatable = new DataTable();
+                sda.Fill(fatable);
+                dataGridView1.DataSource = fatable;
+                CN.thisConnection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                errorDeleteBook.Text = ex.Message;
+            }
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Connection CN = new Connection();
+                string sp_delete = "Delete from bookTable where bookName= '" + this.theValuetextBox.Text + "'";
+                CN.thisConnection.Open();
+                SqlCommand cmd = new SqlCommand(sp_delete, CN.thisConnection);
+
+                int i = cmd.ExecuteNonQuery();
+
+                CN.thisConnection.Close();
+                if (i >0)
+                {
+                    errorDeleteBook.Text = theValuetextBox.Text + " is deleted successfully";
+                }
+                else
+                {
+                    errorDeleteBook.Text = theValuetextBox.Text + " is not found in database.";
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+                errorDeleteBook.Text= ex.Message;
+            }
+            //errorDeleteBook
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            datashow(categoryComboBox.Text);
+            //categoryComboBox
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            datashow();
         }
     }
 }
