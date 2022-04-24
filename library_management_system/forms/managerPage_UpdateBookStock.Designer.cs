@@ -46,8 +46,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -163,6 +161,15 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Action and Adventure",
+            "Classics",
+            "Comic Book",
+            "Detective and Mystery",
+            "Fantasy",
+            "Historical Fiction",
+            "Horror",
+            "Literary Fiction"});
             this.comboBox3.Location = new System.Drawing.Point(423, 179);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(192, 21);
@@ -208,9 +215,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Segoe Script", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(373, 113);
+            this.button5.Location = new System.Drawing.Point(389, 81);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(192, 23);
+            this.button5.Size = new System.Drawing.Size(192, 21);
             this.button5.TabIndex = 74;
             this.button5.Text = "SEARCH";
             this.button5.UseVisualStyleBackColor = true;
@@ -219,35 +226,17 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe Script", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(369, 83);
+            this.label11.Location = new System.Drawing.Point(70, 82);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 20);
+            this.label11.Size = new System.Drawing.Size(85, 20);
             this.label11.TabIndex = 73;
-            this.label11.Text = "enter";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(147, 85);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 21);
-            this.comboBox4.TabIndex = 72;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe Script", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 85);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 20);
-            this.label12.TabIndex = 71;
-            this.label12.Text = "Search by";
+            this.label11.Text = "Book name";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(428, 83);
+            this.textBox1.Location = new System.Drawing.Point(173, 82);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
+            this.textBox1.Size = new System.Drawing.Size(192, 20);
             this.textBox1.TabIndex = 70;
             // 
             // managerPage_UpdateBookStock
@@ -257,8 +246,6 @@
             this.ClientSize = new System.Drawing.Size(654, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
@@ -305,8 +292,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
