@@ -18,7 +18,7 @@ duty of manager
 Admin Interface
 <br>
 
-![](library_management_system/git_sundor/AdminGitSundor.gif)
+![](garbage/readmeAdminGitSundor.gif)
 
 <br>
 Manager Interface
