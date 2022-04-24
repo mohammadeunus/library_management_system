@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace library_management_system.forms
 {
@@ -34,6 +35,33 @@ namespace library_management_system.forms
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Connection CN = new Connection();
+                string bk_insert = "INSERT INTO bookTable VALUES('" + bookTextBox.Text + "', '" + bookPublishYearComboBox.Text + "' '" + writerNameTextBox.Text + "', '" + quantityTextBox.Text + "', '" + quantityTextBox.Text + "', '" + categoryComboBox.Text + "',, '" + entryDateTimePicker.Text + "'); ";
+                CN.thisConnection.Open();
+                SqlCommand cmcd = new SqlCommand(bk_insert, CN.thisConnection);
+
+                cmcd.ExecuteNonQuery();
+
+                CN.thisConnection.Close();
+                ERRORLAvEL.Text = " Data Saved";
+
+            }
+            catch (Exception ex)
+            {
+                ERRORLAvEL.Text = ex.ToString().Substring(0, 200);
+            }
 
         }
     }

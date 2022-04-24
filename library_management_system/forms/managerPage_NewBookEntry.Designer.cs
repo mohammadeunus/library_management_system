@@ -30,18 +30,19 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bookTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.writerNameTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.entryDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.bookPublishYearComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.ERRORLAvEL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,13 +65,13 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Book Name";
             // 
-            // textBox1
+            // bookTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.bookTextBox.Location = new System.Drawing.Point(162, 123);
+            this.bookTextBox.Name = "bookTextBox";
+            this.bookTextBox.Size = new System.Drawing.Size(200, 20);
+            this.bookTextBox.TabIndex = 24;
+            this.bookTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -82,12 +83,12 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Writer Name";
             // 
-            // textBox2
+            // writerNameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(162, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 26;
+            this.writerNameTextBox.Location = new System.Drawing.Point(162, 220);
+            this.writerNameTextBox.Name = "writerNameTextBox";
+            this.writerNameTextBox.Size = new System.Drawing.Size(200, 20);
+            this.writerNameTextBox.TabIndex = 26;
             // 
             // label5
             // 
@@ -100,17 +101,18 @@
             this.label5.Text = "Catagory Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // dateTimePicker1
+            // entryDateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(162, 269);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 29;
+            this.entryDateTimePicker.Location = new System.Drawing.Point(162, 269);
+            this.entryDateTimePicker.Name = "entryDateTimePicker";
+            this.entryDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.entryDateTimePicker.TabIndex = 29;
+            this.entryDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // comboBox3
+            // bookPublishYearComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.bookPublishYearComboBox.FormattingEnabled = true;
+            this.bookPublishYearComboBox.Items.AddRange(new object[] {
             "1999",
             "2001",
             "2003",
@@ -123,10 +125,10 @@
             "2017",
             "2019",
             "2021"});
-            this.comboBox3.Location = new System.Drawing.Point(162, 169);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 21);
-            this.comboBox3.TabIndex = 32;
+            this.bookPublishYearComboBox.Location = new System.Drawing.Point(162, 169);
+            this.bookPublishYearComboBox.Name = "bookPublishYearComboBox";
+            this.bookPublishYearComboBox.Size = new System.Drawing.Size(200, 21);
+            this.bookPublishYearComboBox.TabIndex = 32;
             // 
             // label2
             // 
@@ -147,6 +149,7 @@
             this.button1.TabIndex = 45;
             this.button1.Text = "INSERT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label6
             // 
@@ -158,12 +161,12 @@
             this.label6.TabIndex = 48;
             this.label6.Text = "Quantity";
             // 
-            // textBox3
+            // quantityTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(480, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(135, 20);
-            this.textBox3.TabIndex = 47;
+            this.quantityTextBox.Location = new System.Drawing.Point(480, 172);
+            this.quantityTextBox.Name = "quantityTextBox";
+            this.quantityTextBox.Size = new System.Drawing.Size(135, 20);
+            this.quantityTextBox.TabIndex = 47;
             // 
             // label7
             // 
@@ -175,32 +178,53 @@
             this.label7.TabIndex = 49;
             this.label7.Text = "Book publish year";
             // 
-            // comboBox2
+            // categoryComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(480, 119);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(135, 21);
-            this.comboBox2.TabIndex = 50;
+            this.categoryComboBox.FormattingEnabled = true;
+            this.categoryComboBox.Items.AddRange(new object[] {
+            "Action and Adventure",
+            "Classics",
+            "Comic Book",
+            "Detective and Mystery",
+            "Fantasy",
+            "Historical Fiction",
+            "Horror",
+            "Literary Fiction"});
+            this.categoryComboBox.Location = new System.Drawing.Point(480, 119);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(135, 21);
+            this.categoryComboBox.TabIndex = 50;
+            // 
+            // ERRORLAvEL
+            // 
+            this.ERRORLAvEL.AutoSize = true;
+            this.ERRORLAvEL.BackColor = System.Drawing.Color.Red;
+            this.ERRORLAvEL.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ERRORLAvEL.ForeColor = System.Drawing.Color.Black;
+            this.ERRORLAvEL.Location = new System.Drawing.Point(70, 351);
+            this.ERRORLAvEL.Name = "ERRORLAvEL";
+            this.ERRORLAvEL.Size = new System.Drawing.Size(0, 17);
+            this.ERRORLAvEL.TabIndex = 51;
             // 
             // managerPage_NewBookEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 450);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.ERRORLAvEL);
+            this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.quantityTextBox);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.bookPublishYearComboBox);
+            this.Controls.Add(this.entryDateTimePicker);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.writerNameTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bookTextBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "managerPage_NewBookEntry";
@@ -214,17 +238,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox bookTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox writerNameTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DateTimePicker entryDateTimePicker;
+        private System.Windows.Forms.ComboBox bookPublishYearComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox quantityTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.Label ERRORLAvEL;
     }
 }

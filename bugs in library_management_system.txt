@@ -5,3 +5,4 @@
 3.repeatation of logincheck() function inside homePage_ManagerLogin.cs and homePage_AdminLogin.cs
 4.multiple time Connection.cs class object creatation
 	- try making all of its property static
+5.gridview vs listview
