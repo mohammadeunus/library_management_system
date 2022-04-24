@@ -21,4 +21,10 @@ Admin Interface
 ![](garbage/readmeAdminGitSundor.gif)
 
 <br>
-Manager Interface
+Manager Interface 1: login, New book add operation
+
+![](garbage/readmeManagerInterface1.gif)
+
+<br>
+Manager Interface 2: delete operatoin, search operation
+![](garbage/readmeManagerInterface2.gif)
