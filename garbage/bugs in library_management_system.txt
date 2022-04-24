@@ -6,3 +6,4 @@
 4.multiple time Connection.cs class object creatation
 	- try making all of its property static
 5.gridview vs listview
+6.bound everything into try catch block
