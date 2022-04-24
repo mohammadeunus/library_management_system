@@ -88,6 +88,7 @@
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(190, 21);
             this.categoryComboBox.TabIndex = 66;
+            this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -98,6 +99,7 @@
             this.label12.Size = new System.Drawing.Size(70, 20);
             this.label12.TabIndex = 65;
             this.label12.Text = "Category";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // theValuetextBox
             // 
@@ -146,6 +148,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(499, 193);
             this.dataGridView1.TabIndex = 71;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // managerPage_DeleteBookStock
             // 
