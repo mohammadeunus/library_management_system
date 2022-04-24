@@ -201,7 +201,7 @@
             this.ERRORLAvEL.BackColor = System.Drawing.Color.Red;
             this.ERRORLAvEL.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ERRORLAvEL.ForeColor = System.Drawing.Color.Black;
-            this.ERRORLAvEL.Location = new System.Drawing.Point(70, 351);
+            this.ERRORLAvEL.Location = new System.Drawing.Point(12, 350);
             this.ERRORLAvEL.Name = "ERRORLAvEL";
             this.ERRORLAvEL.Size = new System.Drawing.Size(0, 17);
             this.ERRORLAvEL.TabIndex = 51;

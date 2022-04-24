@@ -48,7 +48,7 @@ namespace library_management_system.forms
             try
             {
                 Connection CN = new Connection();
-                string bk_insert = "INSERT INTO bookTable VALUES('" + bookTextBox.Text + "', '" + bookPublishYearComboBox.Text + "' '" + writerNameTextBox.Text + "', '" + quantityTextBox.Text + "', '" + quantityTextBox.Text + "', '" + categoryComboBox.Text + "',, '" + entryDateTimePicker.Text + "'); ";
+                string bk_insert = "INSERT INTO bookTable (bookName, bookPublishedYear, writerName, quantity, category, entryDate) VALUES('" + bookTextBox.Text + "', '" + bookPublishYearComboBox.Text + "', '" + writerNameTextBox.Text + "', '" + quantityTextBox.Text + "', '" + categoryComboBox.Text + "', '" + entryDateTimePicker.Text + "'); ";
                 CN.thisConnection.Open();
                 SqlCommand cmcd = new SqlCommand(bk_insert, CN.thisConnection);
 
@@ -60,7 +60,7 @@ namespace library_management_system.forms
             }
             catch (Exception ex)
             {
-                ERRORLAvEL.Text = ex.ToString().Substring(0, 200);
+                ERRORLAvEL.Text = ex.ToString().Substring(0, 90)+ "\n" +ex.ToString().Substring(90, 180) + "\n" + ex.ToString().Substring(180, 270) + "\n" + ex.ToString().Substring(270, 360) + "\n" + ex.ToString().Substring(360, 450) + "\n" + ex.ToString().Substring(450, 540);
             }
 
         }
