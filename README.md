@@ -11,7 +11,10 @@ Duty of Admin
 <br>
 Admin Interface
 <br>
+
 ![](garbage/readmeAdminGitSundor.gif)
+
+<br>
 <br>
 Duty of manager
 - Manager can Add New Books
@@ -19,10 +22,14 @@ Duty of manager
 - Manager can search book stock
 - Manager can delete Books
 <br>
+<br>
 Manager Interface 1: login, New book add operation
 <br>
+
 ![](garbage/readmeManagerInterface1.gif)
+
 <br>
 Manager Interface 2: delete operatoin, search operation
 <br>
+
 ![](garbage/readmeManagerInterface2.gif)
