@@ -17,14 +17,12 @@ duty of manager
 <br>
 Admin Interface
 <br>
-
 ![](garbage/readmeAdminGitSundor.gif)
-
 <br>
 Manager Interface 1: login, New book add operation
-
+<br>
 ![](garbage/readmeManagerInterface1.gif)
-
 <br>
 Manager Interface 2: delete operatoin, search operation
+<br>
 ![](garbage/readmeManagerInterface2.gif)
