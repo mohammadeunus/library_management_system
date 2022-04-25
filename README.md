@@ -31,13 +31,13 @@ Manager Interface 1: login, New book add operation
 ![](garbage/readmeManagerInterface1.gif)
 
 <br>
-Manager Interface 2: delete operatoin, search operation
+Manager Interface 2: delete operation, search operation
 <br>
 
 ![](garbage/readmeManagerInterface2.gif)
 
 <br>
-Manager Interface 2: delete operatoin, search operation
+Manager Interface 3: update operation.
 <br>
 
 ![](garbage/readmeManagerInterface3.gif)
