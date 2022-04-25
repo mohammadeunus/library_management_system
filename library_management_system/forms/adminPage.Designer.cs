@@ -125,7 +125,9 @@
             this.Controls.Add(this.mainPanelAdmin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "adminPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminPage";
             this.Load += new System.EventHandler(this.adminPage_Load);
             this.panel1.ResumeLayout(false);
