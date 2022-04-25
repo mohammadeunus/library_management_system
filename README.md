@@ -35,3 +35,9 @@ Manager Interface 2: delete operatoin, search operation
 <br>
 
 ![](garbage/readmeManagerInterface2.gif)
+
+<br>
+Manager Interface 2: delete operatoin, search operation
+<br>
+
+![](garbage/readmeManagerInterface3.gif)
