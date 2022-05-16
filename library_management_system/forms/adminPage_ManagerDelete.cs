@@ -30,16 +30,24 @@ namespace library_management_system.forms
 
         private void DeleteManagerButton_Click(object sender, EventArgs e)
         {
-            Connection CN = new Connection();
-            string sp_delete = "Delete from MANAGERLOGININFO where ID= '" + this.DeleteIdBoxManager.Text + "'";
-            CN.thisConnection.Open();
-            SqlCommand cmd = new SqlCommand(sp_delete, CN.thisConnection);
+            try
+            {
+                Connection CN = new Connection();
+                string sp_delete = "Delete from MANAGERLOGININFO where ID= '" + this.DeleteIdBoxManager.Text + "'";
+                CN.thisConnection.Open();
+                SqlCommand cmd = new SqlCommand(sp_delete, CN.thisConnection);
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            CN.thisConnection.Close();
-         
-            ERRORLABEL.Text = DeleteIdBoxManager.Text + " deleted successfully";
+                CN.thisConnection.Close();
+
+                ERRORLABEL.Text = DeleteIdBoxManager.Text + " deleted successfully";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
           
             //DeleteIdBoxManager
         }

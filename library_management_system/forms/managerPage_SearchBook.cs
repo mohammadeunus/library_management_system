@@ -39,29 +39,7 @@ namespace library_management_system.forms
             }
 
         }
-        private void datashow()
-        {
-            try
-            {
-                string querry;
-                querry = "SELECT * FROM bookTable";
-
-                Connection CN = new Connection();
-
-                SqlDataAdapter sda = new SqlDataAdapter(querry, CN.thisConnection);
-
-                DataTable fatable = new DataTable();
-                sda.Fill(fatable);
-                dataGridView1.DataSource = fatable;
-                CN.thisConnection.Close();
-
-            }
-            catch (Exception ex)
-            {
-                errorsearchBook.Text = ex.Message;
-            }
-
-        }
+ 
 
         private void label1_Click(object sender, EventArgs e)
         {

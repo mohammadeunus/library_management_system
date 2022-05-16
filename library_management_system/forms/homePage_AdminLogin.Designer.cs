@@ -105,6 +105,7 @@
             this.passBoxAdmin.PasswordChar = 'x';
             this.passBoxAdmin.Size = new System.Drawing.Size(164, 20);
             this.passBoxAdmin.TabIndex = 8;
+            this.passBoxAdmin.TextChanged += new System.EventHandler(this.passBoxAdmin_TextChanged);
             // 
             // errorAdminLogin
             // 

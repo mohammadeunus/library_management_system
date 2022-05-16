@@ -61,5 +61,10 @@ namespace library_management_system.forms
         {
 
         }
+
+        private void passBoxAdmin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
